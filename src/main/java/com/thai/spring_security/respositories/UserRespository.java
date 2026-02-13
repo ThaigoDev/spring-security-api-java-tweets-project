@@ -1,0 +1,10 @@
+package com.thai.spring_security.respositories;
+
+import com.thai.spring_security.entities.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.UUID;
+@Repository
+public interface UserRespository  extends JpaRepository<User, UUID> {
+}
