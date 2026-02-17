@@ -7,6 +7,7 @@ import com.thai.spring_security.respositories.UserRespository;
 import jakarta.transaction.Transactional;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.util.Set;
@@ -21,7 +22,7 @@ public class AdminUserConfig  implements CommandLineRunner {
         this.roleRepository = roleRepository;
         this.userRespository = userRespository;
         this.passwordEncoder = passwordEncoder;
-    }
+}
     @Override
     @Transactional
     public void  run( String ...args) throws  Exception {
